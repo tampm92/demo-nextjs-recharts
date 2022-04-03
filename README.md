@@ -1,34 +1,162 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# <h1 align="center" style="font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Demo NextJS Recharts</h1>
+  
+<h3 align="center" style="font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Guide setup Recharts</h3>
+  
+<p align="center">
+  <a href="https://github.com/tampm92/demo-nextjs-recharts"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/tampm92/demo-nextjs-recharts/build"></a>
+  <a href="#last-commit"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/tampm92/demo-nextjs-recharts"></a>
+  <a href="#node-current"><img alt="node-current" src="https://img.shields.io/node/v/next"></a>
+  <a href="#license"><img alt="GitHub" src="https://img.shields.io/github/license/tampm92/demo-nextjs-recharts"></a>
+</p>
+  
+<p align="center">
+  <a href="#getting-started">Getting Started</a> •
+  <a href="#documentation">Documentation</a> •
+  <a href="#support">Need Help?</a> •
+  <a href="#about">About</a> •
+  <a href="#license">License</a>
+</p>
+  
+<br/>
 
-## Getting Started
+## Introduction
 
-First, run the development server:
+AG Grid is a feature rich datagrid designed for the major JavaScript Frameworks.
 
-```bash
-npm run dev
-# or
+<br/>
+  
+## Key Features
+
+- **[Next JS](https://nextjs.org/docs/getting-started)**
+- **[Recharts](https://recharts.org/)**
+- **[react-bootstrap](https://react-bootstrap.github.io)**
+
+<br/>
+  
+## Usage
+
+```sh
+# install libs
+yarn
+# run dev
 yarn dev
+# generate
+yarn export
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br/>
+  
+## Getting Started
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### **Structure**
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```js
+.
+├── 📁 assets
+│   ├── 📁 styles
+│   │   └── 📝 globals.scss
+│   └── 📁 images
+├── 📁 auth
+│   ├── 📝 fireinit.jsx
+│   ├── 📝 index.jsx
+│   └── 📝 routes.jsx
+├── 📁 components
+│   ├── 📁 common
+│   └── 📁 partials
+├── 📁 layouts
+│   ├── 📁 components
+│   └── 📝 default.jsx
+├── 📁 pages
+│   ├── 📝 _app.jsx
+│   ├── 📝 index.jsx
+│   ├── 📝 login.jsx
+│   └── 📝 user.jsx
+├── 📁 public
+├── 📁 shared
+│   ├── 📝config.jsx
+│   └── 📁 services
+├── 📝 jsconfig.js
+├── 📝 next.config.js
+└── 📝 README.md
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<br/>
 
-## Learn More
+### **Prerequisites**
 
-To learn more about Next.js, take a look at the following resources:
+- [Node.js](https://nodejs.org/en)
+- [yarn](https://yarnpkg.com/getting-started/install)
+  
+## Documentation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **API**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Install lib
 
-## Deploy on Vercel
+```bash
+yarn add recharts
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Add example
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```jsx
+import { LineChart, Line } from 'recharts';
+const data = [{name: 'Page A', uv: 400, pv: 2400, amt: 2400}, ...];
+
+const App = () => {
+  return (
+    <LineChart width={400} height={400} data={data}>
+      <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+    </LineChart>
+  );
+};
+
+export default App;
+```
+
+<br/>
+
+### **Performance and testing**
+
+Any of testing activities and reports goes here.
+
+<br/>
+
+## Support
+  
+### **Get Help**
+  
+**You have a question or problem wasn't solved?** No worries! Just open up a new issue in the `GitHub issue tracker`. Please provide all information to reproduce your problem. If you don't have a GitHub account, you can [contact](#contact) me directly.
+  
+<br/>
+  
+## About
+
+### **Known Issues**
+  
+ - none (that are reported)
+
+<br/>
+  
+### **Contact**
+  
+If you haven't done so already, please check out [Get Help](#get-help) for the fastest possible help on your issue. Alternatively you can get in touch with me by:
+
+- Email: phanminhtam1992@gmail.com
+  
+<br/>
+
+## License
+
+This project is proudly licensed under the [MIT license][git-license].
+
+<!-- LINKS -->
+<!-- in-line references: websites -->
+[tampm.com]:https://tampm.com
+[react-bootstrap]:https://react-bootstrap.github.io/
+
+<!-- in-line references to github -->
+
+[git-profile]:https://github.com/tampm92
+[git-readme]:README.md
+[git-license]:LICENSE.md
