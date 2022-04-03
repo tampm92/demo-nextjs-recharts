@@ -19,15 +19,16 @@ const HomePage = () => {
                 AG Grid is a feature rich datagrid designed for the major
                 JavaScript Frameworks.
               </p>
-              <Link
-                className="d-inline-flex align-items-center text-decoration-none pt-2 mt-4 mb-5 color-primary"
-                href="/lineChart"
-                data-scroll=""
-              >
-                <span className="btn btn-icon rounded-circle border-back flex-shrink-0 px-3">
-                  <i className="pe-7s-paper-plane py-2"></i>
-                </span>
-                <span className="ms-3 fw-medium mx-1 text-lg"> View Demos</span>
+              <Link href="/lineChart">
+                <a
+                  className="d-inline-flex align-items-center text-decoration-none pt-2 mt-4 mb-5 color-primary"
+                  data-scroll=""
+                >
+                  <span className="btn btn-icon rounded-circle border-back flex-shrink-0 px-3">
+                    <i className="pe-7s-paper-plane py-2"></i>
+                  </span>
+                  <span className="ms-3 fw-medium mx-1 text-lg"> View Demos</span>
+                </a>
               </Link>
               <hr className="hr-light mt-0 mb-3" />
               <div className="row pl-5 text-l">
