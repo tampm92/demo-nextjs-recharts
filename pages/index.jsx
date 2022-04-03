@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CleanLayout from "@/layouts/clean";
+import Link from 'next/link'
 
 const HomePage = () => {
   return (
@@ -18,7 +19,7 @@ const HomePage = () => {
                 AG Grid is a feature rich datagrid designed for the major
                 JavaScript Frameworks.
               </p>
-              <a
+              <Link
                 className="d-inline-flex align-items-center text-decoration-none pt-2 mt-4 mb-5 color-primary"
                 href="/lineChart"
                 data-scroll=""
@@ -27,7 +28,7 @@ const HomePage = () => {
                   <i className="pe-7s-paper-plane py-2"></i>
                 </span>
                 <span className="ms-3 fw-medium mx-1 text-lg"> View Demos</span>
-              </a>
+              </Link>
               <hr className="hr-light mt-0 mb-3" />
               <div className="row pl-5 text-l">
                 <div className="col-sm-12 mb-4 mb-sm-0">
